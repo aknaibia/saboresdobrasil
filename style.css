@@ -112,7 +112,9 @@ header {
     margin: 20px;
     width: 80%;
 }
-
+.box{
+  width: 500px;  
+}
 .profile {
     width: 25%;
     background-color: orangered;
