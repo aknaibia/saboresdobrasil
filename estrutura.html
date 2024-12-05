@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor do Brasil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    SABORES DO BRASIL
+</header>
+
+<!-- Botão de Login -->
+<button class="login-btn" onclick="toggleLoginBox()">LOGIN</button>
+
+<!-- Caixa de Login -->
+<div class="login-box" id="loginBox">
+    <form action="#" method="POST">
+        <h3>Login</h3>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+        <button type="submit" class="login-submit-btn">Entrar</button>
+        <button type="button" class="close-btn" onclick="toggleLoginBox()">Fechar</button>
+    </form>
+</div>
+<div class="container">
+    <div class="profile">
+       <img src="img/logo_sabor_do_brasil.png" alt="">
+       <h2>Sabores do Brasil</h2>
+    </div>
+</div> 
+
+<div class="container">
+    <div class="profile">
+        <img src="img/usuario_01.jpg" alt="Foto do usuário">
+        <h3>Beatriz Lacerda</h3>
+        <div class="stats">
+            <div>Likes: <strong id="likes-count">150</strong></div>
+            <div>Deslikes: <strong id="dislikes-count">11</strong></div>
+        </div>
+    </div>
+
+    <div class="main">
+        <!-- Postagem 1 -->
+        <div class="post">
+            <h4>TILÁPIA EMPANADA</h4>
+            <img src="img/publicacao01.png" alt="Prato 1">
+            <div class="info">
+                <span>Filé de tilápia assado e acompanhado ao molho.</span>
+                <span>Maceió-AL</span>
+            </div>
+            <div class="actions">
+                <button onclick="likePost('likes-count', 'dislikes-count')">👍 Curtir</button>
+                <button onclick="dislikePost('likes-count', 'dislikes-count')">👎 Descurtir</button>
+                <button onclick="commentPost()">💬 Comentar</button>
+            </div>
+        </div>
+
+        <!-- Postagem 2 -->
+        <div class="post">
+            <h4>HAMBURGUER ARTESANAL</h4>
+            <img src="img/hamburguer.png" alt="Prato 2">
+            <div class="info">
+                <span>Hamburguer com picanha moída, acompanhamentos e molho especial.</span>
+                <span>Recife-PE</span>
+            </div>
+            <div class="actions">
+                <button onclick="likePost('likes-count', 'dislikes-count')">👍 Curtir</button>
+                <button onclick="dislikePost('likes-count', 'dislikes-count')">👎 Descurtir</button>
+                <button onclick="commentPost()">💬 Comentar</button>
+            </div>
+        </div>
+
+        <!-- Postagem 3 -->
+        <div class="post">
+            <h4>PIZZA</h4>
+            <img src="img/pizza2.png" alt="Prato 3">
+            <div class="info">
+                <span>Pizza de Calabresa com 4 queijos.</span>
+                <span>Olinda-PE</span>
+            </div>
+            <div class="actions">
+                <button onclick="likePost('likes-count', 'dislikes-count')">👍 Curtir</button>
+                <button onclick="dislikePost('likes-count', 'dislikes-count')">👎 Descurtir</button>
+                <button onclick="commentPost()">💬 Comentar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Rodapé com ícones -->
+<footer>
+    <div class="footer-icons">
+        <img src="img/Globe.svg" alt="Ícone 1" class="footer-icon">
+        <img src="img/Instagram.svg" alt="Ícone 2" class="footer-icon">
+        <img src="img/Twitter.svg" alt="Ícone 3" class="footer-icon">
+        <img src="img/Whatsapp.svg" alt="Ícone 4" class="footer-icon">
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
